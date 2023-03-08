@@ -1,0 +1,16 @@
+{
+    "name": "sajjad/ecommerce",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Sajjad\\Ecommerce\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Sajjad Hossain",
+            "email": "mohammadsajjad585@gmail.com"
+        }
+    ],
+    "require": {}
+}

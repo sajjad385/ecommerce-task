@@ -8,6 +8,9 @@ Create a new database: `ecommerce` and import the given the database. Which is f
 Go to the project directory:
 
     cd ecommerce-task
+Run the composer command
+
+    composer install
 
 Go to the directory `app/config/config.php` and configure the database.
 

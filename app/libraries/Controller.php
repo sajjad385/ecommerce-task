@@ -1,5 +1,5 @@
 <?php
-
+namespace Sajjad\Ecommerce\Libraries;
 /*
    * Base Controller
    * Loads the models and views

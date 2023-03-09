@@ -1,4 +1,13 @@
 <?php
-function redirect($page){
-    header('location: '. URLROOT . '/'.$page );
+namespace Sajjad\Ecommerce\Helpers;
+
+use Sajjad\Ecommerce\Config;
+
+class Redirect {
+    public static function to($page) {
+        $config = new Config();
+        header('Location: ' . $config->getUrlRoot() . '/' . $page);
+        exit();
+    }
 }
+

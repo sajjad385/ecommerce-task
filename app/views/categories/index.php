@@ -1,4 +1,6 @@
-<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php 
+require  $_SERVER['DOCUMENT_ROOT'] . '/app/views/inc/header.php'; 
+?>
     <div class="row">
         <div class="col-md-12 text-center">
             <h2>All Categories</h2>
@@ -25,4 +27,4 @@
         </div>
     </div>
 
-<?php require APPROOT . '/views/inc/footer.php'; ?>
+<?php require $_SERVER['DOCUMENT_ROOT']  . '/app/views/inc/footer.php'; ?>

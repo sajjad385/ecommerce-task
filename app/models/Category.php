@@ -37,7 +37,7 @@ class Category
                             FROM category c LEFT JOIN catetory_relations cr ON c.Id = cr.categoryId 
                             LEFT JOIN category p ON cr.ParentcategoryId = p.Id 
                             LEFT JOIN Item_category_relations icr ON c.Id = icr.categoryId
-                            GROUP BY c.Name ORDER BY c.Id;");
+                            GROUP BY c.Id, c.Name, p.Name, p.Id ORDER BY c.Id;");
         return $this->db->resultSet();
     }
 }

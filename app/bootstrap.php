@@ -1,10 +1,21 @@
 <?php
-  // Load Config
-  require_once 'config/config.php';
-  require_once 'helpers/url_helpers.php';
+ namespace Sajjad\Ecommerce;
+ use Sajjad\Ecommerce\Config\Config;
 
-  // Autoload Core libraries
-  spl_autoload_register(function($className){
-    require_once 'libraries/' . $className . '.php';
-  });
+ class Autoloader {
+
+  public function __construct () {
+    new \Sajjad\Ecommerce\Helpers\Redirect();
+  }
+     public static function register() {
+        $config = new Config();
+         spl_autoload_register(function($className) use($config) {
+             $classPath = str_replace('\\', '/', $className);
+             require_once $config->getAppRoot() . '/libraries/' . $classPath . '.php';
+         });
+     }
+ }
+ 
+ \Sajjad\Ecommerce\Autoloader::register();
+ 
   

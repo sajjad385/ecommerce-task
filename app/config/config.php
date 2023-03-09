@@ -3,7 +3,7 @@
 const DB_HOST = 'localhost';
 const DB_USER = 'root';
 const DB_PASS = 'root';
-const DB_NAME = 'ecommerce-task';
+const DB_NAME = 'ecommerce';
 
 // App Root
 define("APPROOT", dirname(dirname(__FILE__)));

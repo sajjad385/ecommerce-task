@@ -1,4 +1,5 @@
 <?php
+namespace Sajjad\Ecommerce\Libraries;
 /*
  * PDO Database Class
  * Connect to database
@@ -7,19 +8,21 @@
  * Return rows and results
  */
 
+use PDO;
+use PDOException;
+use Sajjad\Ecommerce\Config\Config;
+
 class Database
 {
-    private $host = DB_HOST;
-    private $user = DB_USER;
-    private $pass = DB_PASS;
-    private $dbname = DB_NAME;
-
-    private $dbh;
-    private $stmt;
-    private $error;
+    private $host, $user, $pass, $dbname, $dbh, $stmt, $error;
 
     public function __construct()
     {
+        $config = new Config();
+        $this->host = $config->getDbHost();
+        $this->user = $config->getDbUser();
+        $this->pass = $config->getDbPass();
+        $this->dbname = $config->getDbName();
         // Set DSN
         $dsn = 'mysql:host=' . $this->host . '; strict=false; dbname=' . $this->dbname;
         $options = array(

@@ -1,5 +1,7 @@
 <?php
 
+use Sajjad\Ecommerce\Libraries\Controller;
+
 class Categories extends Controller
 {
 

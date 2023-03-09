@@ -9,7 +9,7 @@ const DB_NAME = 'ecommerce';
 define("APPROOT", dirname(dirname(__FILE__)));
 
 // URL Root
-const URLROOT = 'http://localhost:8000/ecommerce-task';
+const URLROOT = 'http://localhost/ecommerce-task';
 
 // Site Name
 const SITENAME = 'PHP Task-BS23';

@@ -1,18 +1,50 @@
 <?php
-// DB Params
-const DB_HOST = 'localhost';
-const DB_USER = 'root';
-const DB_PASS = 'root';
-const DB_NAME = 'ecommerce-task';
+namespace Sajjad\Ecommerce\Config;
 
-// App Root
-define("APPROOT", dirname(dirname(__FILE__)));
+class Config {
+    private $dbHost = 'localhost';
+    private $dbUser = 'root';
+    private $dbPass = '';
+    private $dbName = 'ecommerce-task';
+    private $appRoot;
+    private $urlRoot = 'http://localhost:8000/ecommerce-task';
+    private $siteName = 'PHP Task-BS23';
+    private $appVersion = '1.0.0';
 
-// URL Root
-const URLROOT = 'http://localhost:8000/ecommerce-task';
+    public function __construct() {
+        $this->appRoot = dirname(dirname(__FILE__));
+    }
 
-// Site Name
-const SITENAME = 'PHP Task-BS23';
+    public function getDbHost() {
+        return $this->dbHost;
+    }
 
-// App Version
-const APPVERSION = '1.0.0';
+    public function getDbUser() {
+        return $this->dbUser;
+    }
+
+    public function getDbPass() {
+        return $this->dbPass;
+    }
+
+    public function getDbName() {
+        return $this->dbName;
+    }
+
+    public function getAppRoot() {
+        return $this->appRoot;
+    }
+
+    public function getUrlRoot() {
+        return $this->urlRoot;
+    }
+
+    public function getSiteName() {
+        return $this->siteName;
+    }
+
+    public function getAppVersion() {
+        return $this->appVersion;
+    }
+}
+

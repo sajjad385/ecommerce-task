@@ -18,9 +18,9 @@ class Categories extends Controller
     public function index()
     {
 
-        $posts = $this->categoryModel->getCategories();
+        $categories = $this->categoryModel->getCategories();
         $data = [
-            'categories' => $posts
+            'categories' => $categories
         ];
 
         $this->view('categories/index', $data);
@@ -28,9 +28,9 @@ class Categories extends Controller
 
     public function tree()
     {
-        $posts = $this->categoryModel->getCategoriesWithSubcategory();
+        $categories = $this->categoryModel->getCategoriesWithSubcategory();
         $data = [
-            'categories' => $posts
+            'categories' => $categories
         ];
         /*
          * Loop through array and sum item counts of child categories

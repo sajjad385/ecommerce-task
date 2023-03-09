@@ -1,4 +1,5 @@
 <?php
+
 namespace Sajjad\Ecommerce\Config;
 
 class Config {
@@ -47,4 +48,3 @@ class Config {
         return $this->appVersion;
     }
 }
-

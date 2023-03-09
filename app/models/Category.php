@@ -1,5 +1,7 @@
 <?php
 
+use Sajjad\Ecommerce\Libraries\Database;
+
 /**
  * Category class
  */

@@ -1,7 +1,6 @@
 <?php 
 $url = "http://localhost/ecommerce-task";
 ?>
-<?=$url?>
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
   <div class="container">      
@@ -15,10 +14,10 @@ $url = "http://localhost/ecommerce-task";
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="<?php $url?>">All Category</a>
+              <a class="nav-link" href="<?= $url?>">All Category</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?php $url?>/categories/tree">Category Tree</a>
+              <a class="nav-link" href="<?= $url?>/categories/tree">Category Tree</a>
             </li>
           </ul>
         </div>

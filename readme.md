@@ -1,6 +1,5 @@
 ## Demo Website Link: 
-    
-    https://neuro-soft.net/ecommerce-task/
+https://neuro-soft.net/ecommerce-task/
 
 ## Installation Guide
 Clone the repository and run the following commands:
